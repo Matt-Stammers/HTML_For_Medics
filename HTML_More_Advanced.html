@@ -59,6 +59,27 @@
         <!-- notice that the placeholder gives you a faded text within! Required makes it compulsory -->
           <input  id="compulsoryuserinput" type="email" name="useremail" placeholder="Enter your email here" required> 
     </form>
-    
+    <!-- ok so now we move onto drop downs and buttons -->
+    <form class="" action ="https://www.hospital.com" method="get">
+      <h1> Hospital Feedback Form </h1>
+      <h2> Did you like the hospital? </h2>
+      <label for="liked">I liked the hospital:</label>
+        <!-- here is a simple radio form -->
+          <input  id="hospllike" type="radio" name="like" value="Yes"> 
+      label for="notliked">I disliked the hospital:</label>
+      <input  id="hospnolike" type="radio" name="like" value="No">
+      <h2> How was the care? </h2>
+      <!-- now we can do a drop down by using select-->
+      <select name = "rating">
+        <option value="Great">3</option>
+        <option value="Good">2</option>
+        <option value="Poor">1</option>
+    </select>
+   <!-- any other feedback? we can use a textarea tag! -->
+    <h2> Any other feedback? <h2>
+      <textarea name="feedbacktext" rows="7" cols="80" </textarea>
+            <input id="hosprating" type="submit" name="" value="SUBMIT">
+    <!-- when you submit this will be transmitted to the URL -->
+    </form>
   </body>
 </html>
