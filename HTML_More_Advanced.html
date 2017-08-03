@@ -36,63 +36,29 @@
           </tr>
         <!-- Then close the table to finish it off -->
       </table>
-    <!-- Ok so moving on to -->  
+    <!-- Ok so moving on to forms and input-->  
+       <form>
+      <h1> login </h1>
+        <h2> Please input your name and password </h2>
+         <!-- so we can use different input types to automatically restrict what the broswer input will accept -->
+          <input type="email" name="useremail" value="Enter your email here">    
+          <input type="password" name="password" value="">
+          <input type="submit" name="submit" value="Submit">
+          <input type="color" name="colorpicker" value="">
+          <input type="text" name="blog" value="Text goes here">
+        </form>
+      <!-- ok so those are the very basic elements of inputs and forms. Now lets explore labels -->
+      <!-- By adding inputs to forms with 'action' specified the two actions combine! -->
+    <form class="" action ="https://www.facebook.com" method="get">
+      <h1> Login </h1>
+      <label for="userinput">Enter Input:</label>
+        <!-- notice that if you enter information below it changes the URL. This is how the form acts -->
+          <input  id="userinput" type="email" name="useremail" value="Enter your email here"> 
+        <!-- the id is so important as it helps us select out only that item -->
+      <label for="userinput">Enter Input:</label>
+        <!-- notice that the placeholder gives you a faded text within! Required makes it compulsory -->
+          <input  id="compulsoryuserinput" type="email" name="useremail" placeholder="Enter your email here" required> 
+    </form>
     
-    <p> This is a paragraph.
-        This paragraph will be in continuity </p>
-   <!-- whitespace and indentation mean noting to the browser in HTML -->
-      <p> This is a paragraph.
-      
-        This paragraph will be in continuity with the last one </p>
-      <p> However, these paragraphs will be seperate </p>
-      <p> However, these paragraphs will be seperate </p>
-    <!-- if you want dummy text in Atom you can create 'filler' or lorum ipsum text-->
-    <!-- to bold / italicise text you have two choices -->
-      <p><b> To make text bold you can either use b </b> </p>
-      <p><strong> or strong </strong> </p>
-      <p><i> To make text italicised you can either use i </i> </p>
-      <p><em> or you can use em tags </em> </p>
-    <!-- lists -->
-    <h1> lists </h1>
-    <!-- this is an ordered list -->
-    <ol> 
-      <li> This is my first list item. </li>
-      <li> This is my second list item. You need the li tags to build up the numbers </li>
-      <li> This is my third list item. </li>
-    </ol>
-   <!-- This is an Unordered list -->
-    <Ul> 
-      <li> This is my first list item. </li>
-      <li> This is my second list item. You need the li tags to build up the numbers </li>
-      <li> This is my third list item. </li>
-    </Ul>
-   <!-- lists can be 'nested' -->
-    <ol> 
-      <li> This is my first list item. </li>
-      <li> This is my second list item. You need the li tags to build up the numbers </li>
-        <ul>
-          <li> These are the sub-items withing </li>
-          <li> I'm nested! </li>
-          <ol>
-            <li><strong> Super Nesty</strong></li>
-          </ol>
-        </ul>
-      <li> This is my third list item. </li>
-    </ol>
-    <!-- using div's and spans to break things up div's create groups and spans inline regions-->
-      <div class="groupone">
-        <h2> This is Group One </h2>
-        <p> woohoo, group one is awesome</p>
-      </div>
-        <div class="grouptwo">
-          <h2> This is Group Two </h2>
-          <p> woohoo, group two <span> is the best </span></p>
-        </div>
-    <!-- Attributes and links! Remember if you want to insert an image its easiest when doing basic HTML pages to place it in the same directory -->
-      <img src="clin_dev.png" alt="clin_dev.png is missing!"> <!-- alt will display an alternative in the even that the images are not found -->
-    <!-- you can even put a link to a web image and this will work well -->
-    <!-- links and a 0r anchor refs if you created a new page called newpage.html you can link to it like this-->  
-    <a href="newpage.html"> Click Here! <!-- this creates a clickable text link--></a>
-    <a href="https://www.facebook.com."> Click Here to go to facebook! <!-- this creates a clickable text link--></a>
   </body>
 </html>
