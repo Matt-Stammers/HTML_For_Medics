@@ -1,1 +1,76 @@
 <!-- Ok so here we go. Let's boost our skills of more advanced HTML concepts -->
+
+!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Ok, so the basic structure of the document is the same as for basic concepts -->
+    
+    <meta charset="utf-8">
+    <title> Welcome to Advanced HTML for Medics  </title>
+    
+    <!-- Let's start by playing around with a table -->
+  </head>
+  <body>
+    <!--  -->
+    <h1> Welcome to the Clinical Developers </h1>
+    <h2> The home of the clinician coder </h2>
+    <h6> Tiny header </h6>
+      <p> This is a paragraph.
+        This paragraph will be in continuity </p>
+   <!-- whitespace and indentation mean noting to the browser in HTML -->
+      <p> This is a paragraph.
+      
+        This paragraph will be in continuity with the last one </p>
+      <p> However, these paragraphs will be seperate </p>
+      <p> However, these paragraphs will be seperate </p>
+    <!-- if you want dummy text in Atom you can create 'filler' or lorum ipsum text-->
+    <!-- to bold / italicise text you have two choices -->
+      <p><b> To make text bold you can either use b </b> </p>
+      <p><strong> or strong </strong> </p>
+      <p><i> To make text italicised you can either use i </i> </p>
+      <p><em> or you can use em tags </em> </p>
+    <!-- lists -->
+    <h1> lists </h1>
+    <!-- this is an ordered list -->
+    <ol> 
+      <li> This is my first list item. </li>
+      <li> This is my second list item. You need the li tags to build up the numbers </li>
+      <li> This is my third list item. </li>
+    </ol>
+   <!-- This is an Unordered list -->
+    <Ul> 
+      <li> This is my first list item. </li>
+      <li> This is my second list item. You need the li tags to build up the numbers </li>
+      <li> This is my third list item. </li>
+    </Ul>
+   <!-- lists can be 'nested' -->
+    <ol> 
+      <li> This is my first list item. </li>
+      <li> This is my second list item. You need the li tags to build up the numbers </li>
+        <ul>
+          <li> These are the sub-items withing </li>
+          <li> I'm nested! </li>
+          <ol>
+            <li><strong> Super Nesty</strong></li>
+          </ol>
+        </ul>
+      <li> This is my third list item. </li>
+    </ol>
+    <!-- using div's and spans to break things up div's create groups and spans inline regions-->
+      <div class="groupone">
+        <h2> This is Group One </h2>
+        <p> woohoo, group one is awesome</p>
+      </div>
+        <div class="grouptwo">
+          <h2> This is Group Two </h2>
+          <p> woohoo, group two <span> is the best </span></p>
+        </div>
+    <!-- Attributes and links! Remember if you want to insert an image its easiest when doing basic HTML pages to place it in the same directory -->
+      <img src="clin_dev.png" alt="clin_dev.png is missing!"> <!-- alt will display an alternative in the even that the images are not found -->
+    <!-- you can even put a link to a web image and this will work well -->
+    <!-- links and a 0r anchor refs if you created a new page called newpage.html you can link to it like this-->  
+    <a href="newpage.html"> Click Here! <!-- this creates a clickable text link--></a>
+    <a href="https://www.facebook.com."> Click Here to go to facebook! <!-- this creates a clickable text link--></a>
+  </body>
+</html>
